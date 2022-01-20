@@ -20,11 +20,100 @@ header{
   
 }
 
+/*Animação botão*/
+
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+
+/**Toggle Menu**/
+
+.menu-mobile{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253,141,9,255);
+  position: fixed;
+  top: 10%;
+  height: 200px;
+  width: 100%;
+  
+  z-index: 100;
+}
+.toggle-menu-nav{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.toggle-menu-nav a{
+  font-family: 'Sarala', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #FFF;
+}
+
+.toggle-menu-nav a:hover{
+  color: #31cd78;
+}
+
+
+/**Head***/
+
 .cabecalho {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 .cabecalho-imagem {
   height: 72px;
@@ -200,11 +289,44 @@ body {
   color: #fff;
 }
 
+.conteudo-rodape a:hover{
+  color: #2ca161;
+}
+
 
 
 /*Responsividade*/
 
+@media screen and (min-width:300px) and (max-width:591px){
+  .cabecalho{
+    justify-content: end;
+  }
+  .cabecalho-menu{
+    display: none;
+  }
+  /*Toggle Menu*/
+  .mobile-menu{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 12%;
+    
+  }
+  #menuMobile.active {
+    display: flex;
+    
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
+
+
+
 @media screen and (min-width:300px) and (max-width:700px){
+ 
+
   .conteudo-principal{
     height: 700px;
     flex-direction: column;

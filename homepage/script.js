@@ -1,48 +1,28 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
-  
 
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    // Animação //
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
+/*função botao menu */
 
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
+let btn = document.getElementById("menuMobile");
+
+function changeToggle () {
   
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
+  let btnNav = document.getElementById("menuMobile");
+  btnNav.classList.toggle('active');
   
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
+}
+
+/*Animação botão */
+
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
   }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list a",
-  );
+});  
 
-  mobileNavbar.init();
+
+

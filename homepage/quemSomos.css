@@ -136,3 +136,30 @@ body {
   font-size: 35px;
   color: #fff;
 }
+
+
+
+
+/*****Responsividade*****/
+
+@media screen and (min-width:300px) and (max-width:500px) {
+  
+  .conteudo{
+    background-size: 100% 26%;
+    
+  }
+
+  .pseudo-element {
+    height: 320px;
+}
+  
+  .conteudo-principal-escrito a h1{
+    font-size: 54px;
+  }
+  .conteudo-principal-escrito-subtitulo{
+    text-align: center;
+  } 
+  .conteudo-secundario h2{
+    text-align: center;
+  }
+}

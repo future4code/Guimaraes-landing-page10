@@ -5,56 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="faleConosco.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <title>Fale Conosco</title>
 </head>
-<body>
 
-    <body>
-        <header class="cabecalho">
-            
-            <nav class="cabecalho-menu">
-              <a class="cabecalho-menu-item" href="quemSomos.html">Quem somos</a>
-              <a class="cabecalho-menu-item" href="nossosServicos.html">Nossos Serviços</a>
-              <a class="cabecalho-menu-item" href="faleConosco.html">Fale Conosco</a>
-              <a class="cabecalho-menu-item" href="trabalheConosco.html">Trabalhe Conosco</a>
-            </nav>
-        </header>
+<body>
+ 
     
-        <main class="conteudo">
-            <section class="conteudo-principal">
-              <div class="conteudo-principal-escrito">
-                <a href="index.html" class="conteudo-principal-escrito-titulo"><h1>F4Bank</h1></a>
-                <h2 class="conteudo-principal-escrito-subtitulo">
-                  Tradição e Inovação em um só lugar!
-                </h2>
-            </section>
-    
-        </main>
+    <header class="cabecalho">
+       
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Home</a>
+          <a class="cabecalho-menu-item" href="quemSomos.html">Quem somos</a>
+          <a class="cabecalho-menu-item" href="nossosServicos.html">Nossos Serviços</a>
+          <a class="cabecalho-menu-item" href="faleConosco.html">Fale Conosco</a>
+          
+        </nav>
+    </header>
     
     
-        <footer class="conteudo-rodape">
-          <!-- <h3 class="conteudo-rodape-titulo">Estamos por aqui também &rarr;</h3> -->
-          <a target="_blank" href="https://pt-br.facebook.com/"
-            ><img
-              class="conteudo-rodape-imagem"
-              src="/imgs/logo-facebook.png"
-              alt="logo-facebook"
-          /></a>
+        <div class="pseudo-element">
+
+        </div>
+
+        <!--Formulario-->
+
+        <div class="container">
+          <h1>Quer falar com a gente?</h1>
+          <p>É só mandar sua mensagem por aqui, ficaremos felizes pelo contato)</p>
+          <form>
+              <div class="row">
+                  <div class="column">
+                      <label for="name">Nome</label>
+                      <input type="text" id="name" placeholder="Digite seu nome">
+                  </div>
+                  <div class="column">
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" placeholder="Digite seu email">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <label for="subject">Assunto</label>
+                      <input type="text" id="subject" placeholder="O que desejesa?">
+                  </div>
+                  <div class="column">
+                      <label for="contact">Telefone de contato</label>
+                      <input type="tel" id="contact" placeholder="seu numero de telefone">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <label for="issue">Mensagem</label>
+                      <textarea id="issue" placeholder="Escreva em detalhes o motivo do seu contato" rows="3"></textarea>
+                  </div>
+              </div>
+              <button>Enviar</button>
+          </form>
+      </div>
+
+
+
     
-          <a target="_blank" href="https://www.instagram.com/"
-            ><img
-              class="conteudo-rodape-imagem"
-              src="/imgs/logo-insta1.png"
-              alt="instagram-logo"
-          /></a>
-    
-          <a target="_blank" href="https://twitter.com/"
-            ><img
-              class="conteudo-rodape-imagem"
-              src="imgs/1216915.png"
-              alt="logo-twitter"
-          /></a>
-        </footer>
+      <!--fOOTER-->
+
+    <footer class="conteudo-rodape">
+      <!-- <h3 class="conteudo-rodape-titulo">Estamos por aqui também &rarr;</h3> -->
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-facebook"> </i></a>
+
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-instagram"> </i></a>
+
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-twitter"> </i></a>
+    </footer>
     
     
 </body>

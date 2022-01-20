@@ -113,7 +113,8 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  padding-right: 4%;
 }
 .cabecalho-imagem {
   height: 72px;

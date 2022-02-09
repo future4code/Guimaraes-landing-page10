@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faleConosco.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <title>Fale Conosco</title>
+</head>
+
+<body>
+ 
+    
+    <header class="cabecalho">
+       
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Home</a>
+          <a class="cabecalho-menu-item" href="quemSomos.html">Quem somos</a>
+          <a class="cabecalho-menu-item" href="nossosServicos.html">Nossos Serviços</a>
+          <a class="cabecalho-menu-item" href="faleConosco.html">Fale Conosco</a>
+          
+        </nav>
+        <div class="menu-btn" onclick="changeToggle()">
+            <div class="menu-btn__burger"></div>
+          </div>
+    </header>
+
+     <!--Toogle-side-->
+
+     <div class="menu-mobile"  id="menuMobile">
+        <nav class="toggle-menu-nav" id="navList">
+          <a class="toggle-menu" href="index.html">Home</a>
+          <a class="toggle-menu" href="quemSomos.html">Quem somos</a>
+          <a class="toggle-menu" href="nossosServicos.html">Nossos Serviços</a
+          >
+          <a class="toggle-menu "href="faleConosco.html">Fale Conosco</a>
+          
+        </nav>
+      </div>
+    
+    
+        <div class="pseudo-element">
+
+        </div>
+
+        <!--Formulario-->
+
+        <div class="container">
+          <h1>Quer falar com a gente?</h1>
+          <p>É só mandar sua mensagem por aqui, ficaremos felizes pelo contato)</p>
+          <form>
+              <div class="row">
+                  <div class="column">
+                      <label for="name">Nome</label>
+                      <input type="text" id="name" placeholder="Digite seu nome">
+                  </div>
+                  <div class="column">
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" placeholder="Digite seu email">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <label for="subject">Assunto</label>
+                      <input type="text" id="subject" placeholder="O que desejesa?">
+                  </div>
+                  <div class="column">
+                      <label for="contact">Telefone de contato</label>
+                      <input type="tel" id="contact" placeholder="seu numero de telefone">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <label for="issue">Mensagem</label>
+                      <textarea id="issue" placeholder="Escreva em detalhes o motivo do seu contato" rows="3"></textarea>
+                  </div>
+              </div>
+              <button>Enviar</button>
+          </form>
+      </div>
+
+
+
+    
+      <!--fOOTER-->
+
+    <footer class="conteudo-rodape">
+      <!-- <h3 class="conteudo-rodape-titulo">Estamos por aqui também &rarr;</h3> -->
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-facebook"> </i></a>
+
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-instagram"> </i></a>
+
+      <a target="_blank" href="https://twitter.com/"> <i class="fab fa-twitter"> </i></a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
